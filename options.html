@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPC Generator Settings</title>
+  <link rel="stylesheet" href="options-style.css">
+</head>
+<body>
+  <h1>NPC Generator Settings</h1>
+
+  <div class="field">
+    <label><input type="checkbox" id="show-name" checked> Name</label>
+    <div class="expandable-content">
+      <fieldset>
+        <legend>Name Data:</legend>
+        <p>Generated Names</p>
+        <div>
+          <label>
+            <input type="checkbox" id="use-prefix-suffix" checked>
+            Prefix/Suffix
+          </label>
+        </div>
+        <p>Real World Name Lists</p>
+        <div class="name-options">
+          <label><input type="checkbox" id="names-africa" checked>Africa</label>
+          <label><input type="checkbox" id="names-asia" checked>Asia</label>
+          <label><input type="checkbox" id="names-north-america" checked>North America</label>
+          <label><input type="checkbox" id="names-south-america" checked>South America</label>
+          <label><input type="checkbox" id="names-europe" checked>Europe</label>
+          <label><input type="checkbox" id="names-oceania" checked>Oceania</label>
+        </div>
+        <p>Custom Data</p>
+        <div>
+          <label>
+            <input type="checkbox" id="show-name-custom" checked>
+            Custom Name Data
+          </label>
+        </div>
+      </fieldset>
+      <br/>
+      <label>First Name Entries (comma separated):</label>
+      <textarea id="firstNames"></textarea>
+      <label>Last Name Entries (comma separated):</label>
+      <textarea id="lastNames"></textarea>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label><input type="checkbox" id="show-description" checked>Description</label>
+    <div class="expandable-content">
+
+      <!-- Age Data -->
+      <div class="sub-item">
+        <fieldset>
+          <legend>Age Data:</legend>
+          <div class="name-options">
+            <label><input type="checkbox" id="show-age" checked>Default Age Data</label>
+            <label><input type="checkbox" id="show-age-custom" checked>Custom Age Data</label>
+          </div>
+        </fieldset>
+        <label>Ages (comma-separated)</label>
+        <textarea id="ages"></textarea>
+      </div>
+
+      <!-- Gender Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Gender Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-gender" checked>Default Gender Data</label>
+                  <label><input type="checkbox" id="show-gender-custom" checked>Custom Gender Data</label>
+              </div>
+          </fieldset>
+          <label>Genders (comma-separated)</label>
+          <textarea id="genders"></textarea>
+      </div>
+
+      <!-- Race Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Race Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-race" checked>Default Race Data</label>
+                  <label><input type="checkbox" id="show-race-custom" checked>Custom Race Data</label>
+              </div>
+          </fieldset>
+          <label>Races (comma-separated)</label>
+          <textarea id="races"></textarea>
+      </div>
+
+      <!-- Hairstyle Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Hairstyle Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-hairstyle" checked>Default Hairstyle Data</label>
+                  <label><input type="checkbox" id="show-hairstyle-custom" checked>Custom Hairstyle Data</label>
+              </div>
+          </fieldset>
+          <label>Hairstyles (comma-separated)</label>
+          <textarea id="hairstyles"></textarea>
+      </div>
+
+      <!-- Unique Features Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Unique Features Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-uniqueFeature" checked>Default Unique Feature Data</label>
+                  <label><input type="checkbox" id="show-uniqueFeature-custom" checked>Custom Unique Feature Data</label>
+              </div>
+          </fieldset>
+          <label>Unique Features (comma-separated)</label>
+          <textarea id="uniqueFeatures"></textarea>
+      </div>
+
+      <!-- Height Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Height Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-height" checked>Default Height Data</label>
+                  <label><input type="checkbox" id="show-height-custom" checked>Custom Height Data</label>
+              </div>
+          </fieldset>
+          <label>Heights (comma-separated)</label>
+          <textarea id="heights"></textarea>
+      </div>
+
+      <!-- Build Data -->
+      <div class="sub-item">
+          <fieldset>
+              <legend>Build Data:</legend>
+              <div class="name-options">
+                  <label><input type="checkbox" id="show-build" checked>Default Build Data</label>
+                  <label><input type="checkbox" id="show-build-custom" checked>Custom Build Data</label>
+              </div>
+          </fieldset>
+          <label>Builds (comma-separated)</label>
+          <textarea id="builds"></textarea>
+      </div>
+
+      <!-- Limit Description Items -->
+      <div class="sub-item">
+        <fieldset>
+          <legend>Randomly Show Description Items:</legend>
+          <div class="flex-row">
+            <label><input type="checkbox" id="limit-description-items" checked>Limit Description Items</label>
+            <label><input type="number" id="description-item-limit" value="7" min="1" max="7">Max Items</label>
+            <p>
+              Always show these items, if checked. Number of checked items must be less than max items.
+            </p>
+            <div class="name-options">
+              <label><input type="checkbox" id="always-show-age" checked>Age</label>
+              <label><input type="checkbox" id="always-show-gender" checked>Gender</label>
+              <label><input type="checkbox" id="always-show-race" checked>Race</label>
+              <label><input type="checkbox" id="always-show-hairstyle" checked>Hairstyle</label>
+              <label><input type="checkbox" id="always-show-uniqueFeature" checked>Unique Feature</label>
+              <label><input type="checkbox" id="always-show-height" checked>Height</label>
+              <label><input type="checkbox" id="always-show-build" checked>Build</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label><input type="checkbox" id="show-voice" checked>Voice</label>
+    <div class="expandable-content">
+      <!-- Accent Data -->
+      <div class="sub-item">
+        <fieldset>
+            <legend>Accent Data:</legend>
+            <div class="name-options">
+                <label><input type="checkbox" id="show-accent-custom" checked>Custom Accent Data</label>
+            </div>
+        </fieldset>
+        <label>Accents (comma-separated)</label>
+        <textarea id="accents"></textarea>
+      </div>
+
+      <!-- Pitch Data -->
+      <div class="sub-item">
+        <fieldset>
+            <legend>Pitch Data:</legend>
+            <div class="name-options">
+                <label><input type="checkbox" id="show-pitch" checked>Default Pitch Data</label>
+                <label><input type="checkbox" id="show-pitch-custom" checked>Custom Pitch Data</label>
+            </div>
+        </fieldset>
+        <label>Pitches (comma-separated)</label>
+        <textarea id="pitches"></textarea>
+      </div>
+
+      <!-- Force Data -->
+      <div class="sub-item">
+        <fieldset>
+            <legend>Force Data:</legend>
+            <div class="name-options">
+                <label><input type="checkbox" id="show-force" checked>Default Force Data</label>
+                <label><input type="checkbox" id="show-force-custom" checked>Custom Force Data</label>
+            </div>
+        </fieldset>
+        <label>Forces (comma-separated)</label>
+        <textarea id="forces"></textarea>
+      </div>
+
+      <!-- Speed Data -->
+      <div class="sub-item">
+        <fieldset>
+            <legend>Speed Data:</legend>
+            <div class="name-options">
+                <label><input type="checkbox" id="show-speed" checked>Default Speed Data</label>
+                <label><input type="checkbox" id="show-speed-custom" checked>Custom Speed Data</label>
+            </div>
+        </fieldset>
+        <label>Speeds (comma-separated)</label>
+        <textarea id="speeds"></textarea>
+      </div>
+
+      <!-- Extras Data -->
+      <div class="sub-item">
+        <fieldset>
+            <legend>Extras Data:</legend>
+            <div class="name-options">
+                <label><input type="checkbox" id="show-extras" checked>Default Extras Data</label>
+                <label><input type="checkbox" id="show-extras-custom" checked>Custom Extras Data</label>
+            </div>
+        </fieldset>
+        <label>Extras (comma-separated)</label>
+        <textarea id="extras"></textarea>
+      </div>
+    </div>
+</div> 
+  
+  <div class="field">
+      <fieldset>
+        <legend>Mannerisms Data:</legend>
+        <div class="name-options">
+            <label><input type="checkbox" id="show-mannerism" checked>Default Mannerisms Data</label>
+            <label><input type="checkbox" id="show-mannerism-custom" checked>Custom Mannerisms Data</label>
+        </div>
+    </fieldset>
+    <label>Mannerism (comma-separated)</label>
+    <div class="expandable-content">
+      <textarea id="mannerisms"></textarea>
+    </div>
+  </div>
+  
+  <div class="field">
+      <fieldset>
+        <legend>Plot Hooks Data:</legend>
+        <div class="name-options">
+            <label><input type="checkbox" id="show-plotHook" checked>Default Plot Hooks Data</label>
+            <label><input type="checkbox" id="show-plotHook-custom" checked>Custom Plot Hooks Data</label>
+        </div>
+    </fieldset>
+    <label>Plot Hooks (comma-separated)</label>
+    <div class="expandable-content">
+      <textarea id="plotHooks"></textarea>
+    </div>
+  </div>
+  
+  <p><strong>IMPORTANT! </strong>Back up any custom data in a separate note or text file. Your custom data may be erased if your local browser data is erased.</p>
+  <button id="save-settings">Save Settings</button>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #863232;
+    --button-hover-bg: rgb(170, 61, 61);
+    --button-text: white;
+    --link-color: #0000EE;
+    --visited-link-color: #551A8B;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #1e1e1e;
+      --text-color: #ffffff;
+      --button-bg: #a04040;
+      --button-hover-bg: rgb(200, 80, 80);
+      --button-text: #ffffff;
+      --link-color: #8CB4FF;
+      --visited-link-color: #BB86FC;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 75%;
+  }
+  h1 {
+    font-family: Luminari, fantasy, Copperplate, Papyrus, cursive;
+    font-size: 2.5em;
+  }
+  .npc-details {
+    margin: 20px 0;
+  }
+  .npc-field {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .npc-field strong {
+    text-align: right;
+    padding-right: 10px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  a {
+    color: var(--link-color);
+  }
+  
+  a:visited {
+    color: var(--visited-link-color);
+  }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPC Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>NPC Generator</h1>
+  <div class="npc-details">
+    <div class="npc-field" id="npc-name-label"><strong>Name:</strong> <span id="npc-name"></span></div>
+    <div class="npc-field" id="npc-description-label"><strong>Description:</strong> <span id="npc-description"></span></div>
+    <div class="npc-field" id="npc-voice-label"><strong>Voice:</strong> <span id="npc-voice"></span></div>
+    <div class="npc-field" id="npc-mannerism-label"><strong>Mannerism:</strong> <span id="npc-mannerism"></span></div>
+    <div class="npc-field" id="npc-plotHook-label"><strong>Plot Hook:</strong> <span id="npc-plotHook"></span></div>
+  </div>
+  <div class="buttons">
+    <button id="generate-npc">Generate NPC</button>
+    <button id="copy-to-clipboard">Copy to Clipboard</button>
+  </div>
+  <div id="projects-container"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
