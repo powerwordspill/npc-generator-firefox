@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "NPC Generator",
-  "version": "1.0",
+  "version": "1.11",
   "description": "Randomly generates NPC details.",
   "background": {
     "scripts": ["background.js"],

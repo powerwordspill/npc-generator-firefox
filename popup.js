@@ -408,7 +408,7 @@ function generateFantasyName(prefixes, suffixes) {
 
 function updateProjects() {
   displayFallbackContent();
-  const gistUrl = 'https://gist.githubusercontent.com/powerwordspill/fecde8e022c3d08505d3f7819e4b7ae6/raw/7aa65dde3b54d6c5075cd2a961a4bf17d3239bec/projects.json';
+  const gistUrl = 'https://gist.github.com/powerwordspill/fecde8e022c3d08505d3f7819e4b7ae6/raw';
 
   fetch(gistUrl)
     .then(response => {
